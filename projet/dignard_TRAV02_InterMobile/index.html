@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zappa Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css" integrity="sha256-Nfu23DiRqsrx/6B6vsI0T9vEVKq1M6KgO8+TV363g3s=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Nav -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><h1 class="logo">Zappa Store</h1></a>
+    <i class="fas fa-th-list liste"></i>
+    <i class="fas fa-stream mosaique"></i>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"><span class="oi oi-list"></span><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="oi oi-grid-two-up"></span></a>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Panier (<span class="total-clique"></span>)</button><button class="clear-cart btn btn-danger">Reset panier</button>
+        </div>
+    </div>  
+</nav>   
+<!-- Main -->
+<main class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="card" style="width: 15rem;">
+        <img class="card-img-top" src="img/apostrophe.jpg" alt="Pochette de l'album Apostrophe de Frank Zappa">
+        <div class="card-block">
+            <h4 class="card-title">Apostrophe (')</h4>
+            <p class="card-text">Prix: $50 (LP)</p>
+            <a href="#" data-name="apostrophe" data-price="50" class="add-to-cart btn btn-primary text-center" id="btn1">Ajouter au panier</a>
+        </div>
+        </div>
+      </div>
+      <div class="col text-center">
+        <div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/freakout.jpg" alt="Pochette de l'album Freak Out de Frank Zappa">
+  <div class="card-block">
+    <h4 class="card-title">Freak Out!</h4>
+    <p class="card-text">Prix: $45 (LP)</p>
+    <a href="#" data-name="freakout" data-price="45" class="add-to-cart btn btn-primary" id="btn2">Ajouter au panier</a>
+  </div>
+</div>
+      </div>
+      <div class="col text-center">
+        <div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/the_grand_wazoo.jpg" alt="Pochette de l'album Freak Out de Frank Zappa">
+  <div class="card-block">
+    <h4 class="card-title">The Grand Wazoo</h4>
+    <p class="card-text">Prix: $75 (LP)</p>
+    <a href="#" data-name="grandwazoo" data-price="55" class="add-to-cart btn btn-primary" id="btn3">Ajouter au panier</a>
+  </div>
+</div>
+      </div>
+      <div class="col text-center">
+        <div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/overnite-sensation.jpg" alt="Pochette de l'album Overnight Sensation de Frank Zappa">
+  <div class="card-block">
+    <h4 class="card-title">Overnight Sensation</h4>
+    <p class="card-text">Prix: 45$ (LP)</p>
+    <a href="#" data-name="overnight" data-price="45" class="add-to-cart btn btn-primary" id="btn4">Ajouter au panier</a>
+  </div>
+</div>
+      </div>
+      <div class="col text-center">
+        <div class="card" style="width: 15rem;">
+  <img class="card-img-top" src="img/zappaonesizefitsall.jpg" alt="Pochette de l'album One Size Fits All de Frank Zappa">
+  <div class="card-block">
+    <h4 class="card-title">One Size Fits All</h4>
+    <p class="card-text">Prix: $50 (LP)</p>
+    <a href="#" data-name="onesize" data-price="50" class="add-to-cart btn btn-primary" id="btn5">Ajouter au panier</a>
+  </div>
+</div>
+      </div>
+    </div>
+</main>
+
+  
+ <!-- Fenêtre Modal Bootstrap qui apparait lorsqu'on clique sur le panier -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Prix total: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Passer la commande</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<footer id="sticky-footer" class="py-4 text-white-50">
+    <div class="container text-center">
+      <small>Travail fait par Jean-François Dignard</small>
+    </div>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/js/regular.js" integrity="sha256-bTtxtH952awDascqtfaFrwKtPL2R/kr8BCDwytdo204=" crossorigin="anonymous"></script>
+<script src="app/app.js"></script>
+</body>
+</html>

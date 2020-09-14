@@ -1,0 +1,7 @@
+BG1 PRemiere photo du paralax : Photo by Philipp Katzenberger on Unsplash
+BG2 Photo by Shapelined on Unsplash
+BG3 Photo by Glenn Carstens-Peters on Unsplash
+BG4 Contact Photo by NordWood Themes on Unsplash
+
+Bootstrap icons : <div>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+GIT icons svg : <div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

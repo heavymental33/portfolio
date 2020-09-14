@@ -1,0 +1,299 @@
+
+/* Regle de style général*/ 
+
+body {
+  overflow-x: hidden;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
+}
+
+h2.display-5 {
+  color: crimson;
+}
+
+h1,h2 {
+  padding: 40px;
+}
+
+i {
+  color: white;
+} 
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 0.5em;
+  z-index: 10;
+}
+
+main {
+  z-index: 1;
+}
+
+
+nav {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+}
+
+
+/* Style paralax header*/ 
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+}
+     
+    /* pagragraphe pour les sections parallax */ 
+.paral p {
+  font-size: 24px;
+  color:#f5f5f5;
+  text-align: center;
+  line-height: 60px;
+}
+     
+    /* heading des sections parallax */ 
+.paral h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 100px;
+}
+     
+    /* Background images pour les sections parallax */ 
+.paralsec {
+  background-image: url("../img/rsz_bg1.jpg");
+}
+     
+.paralsec1 {
+  background-image: url("../img/bg2.jpg")
+}
+     
+.paralsec2 {
+  background-image: url("../img/rsz_bg3.jpg");
+}
+
+.paralsec3 {
+  background-image: url("../img/rsz_bg4.jpg");
+}
+     
+    /* Enleève bottom margin des section parallax */
+.jumbotron-fluid {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+    /* Règles de modification CSS pour le full-width */ 
+.row {
+  margin-right: 0px;
+  justify-content: center !important;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+    /* FIN Règles de modification CSS pour le full-width */
+
+
+  /*ID & CLASSES perso */
+#carte {
+  background-image: url("/img/projet_1.png") !important;
+  background-repeat: no-repeat;
+}
+
+.espace {
+  line-height: 1.6 !important;
+}
+
+.space {
+  margin-top: 5%;
+}
+
+.opac {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.logo {
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+  /* FIN ID & CLASSES perso */
+
+  /* Footer */
+.wn-footer {
+  padding: 2.5rem 0;
+  text-align: center;
+  color: white;
+  background-color: #607D8B;
+  border-top: .05rem solid #e5e5e5;
+}
+     
+.wn-footer a {
+  color: yellow;
+}
+
+.fa-terminal {
+  color: white;
+  margin-left: 0.5em;
+}
+
+
+  /* Skills */
+
+.amg-badge-collection {
+  background: #151515;
+}	
+
+.amg-badge h3 {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px 5%;
+}
+
+.amg-badge {
+  margin-right: 2em;
+  padding: 1em;
+}
+
+
+#bars {
+  margin: 2em auto;
+  max-width: 960px;
+  overflow: hidden;
+}
+        
+.bar {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+        
+.bar h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+        
+.bar-circle {
+  display: block;
+  margin: 0.7em auto;
+}
+
+.lh2 {
+  line-height: 0px;
+}
+
+.card {
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.card-text {
+  font-size:medium !important;
+}
+
+.contact {
+  color: black !important;
+  font-size: small !important;
+}
+
+/* Media qurey section */
+
+@media(max-width: 786px) {
+
+  .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: #000;
+  }
+
+  nav.black ul {
+        background: #000;
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+
+  .menu-icon {
+        display: block;
+  }
+
+}
