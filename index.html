@@ -2,8 +2,10 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Portfolio Jean-François Dignard | Développeur Web</title>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Portfolio Jean-François Dignard | Intégrateur/Développeur Web</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<meta name="description" content="Portfolio des projets web professionels de Jean-Francois Dignard, développeur web et intégrateur web dans la région de la ville de Québec.">
 <!-- Bootstrap 4 + CSS -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="lib/css/bootstrap.min.css">
@@ -17,25 +19,46 @@
          <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
          </div>
-         <div class="logo">
-            <img src="img/logo_portefolio.png" alt="Logo Portfolio Jean-Francois Dignard">
+         <div class="logo mt-1">
+             <a href="http://jfd.hmwebdev.net/">
+                  <picture>
+                  <source media="(min-width:1300px)" srcset="img/logo_portefolio.png">
+                  <img src="img/rsz_logo_portefolio.png" alt="Logo Portfolio Jean-Francois Dignard" style="width:auto;">
+               </picture>   
+             </a>
+           
          </div>
          <div class="menu">
             <ul>
               <li>
-                <a href="#qui">Qui suis-je?</a>
+                <a href="#qui" id="quisuije">
+                  <img src="img/quisuije_btn.png" id="quimenu" class="image-on" alt="Menu qui suis-je">
+                  <img src="img/quisuije_btn_red.png" class="image-off img-fluid" alt="Menu qui suis-je surligner rouge">
+                </a>
               </li>
               <li>
-                <a href="#comp">Compétences</a>
+                <a href="#comp" id="competences">
+                  <img src="img/competences_btn.png" class="image-on" alt="Menu compétences">
+                  <img src="img/competences_btn_red.png" class="image-off" alt="Menu compétences surligner rouge">
+                </a>
               </li>
               <li>
-                <a href="#trav">Travaux</a>
+                <a href="#trav" id="travaux">
+                  <img src="img/travaux_btn.png" class="image-on" alt="Menu travaux">
+                  <img src="img/travaux_btn_red.png" class="image-off" alt="Menu travaux surligner rouge">
+                </a>
               </li>
               <li>
-                <a href="#cont">Contact</a>
+                <a href="#cont" id="contact">
+                  <img src="img/contact_btn.png" class="image-on" alt="Menu contact">
+                  <img src="img/contact_btn_red.png" class="image-off" alt="Menu contact surligner rouge">
+                </a>
               </li>
               <li>
-                <a href="img/Jfdcv.pdf" target="_blank">CV</a>
+                <a href="img/Jfdcv.pdf" id="cv" target="_blank">
+                  <img src="img/cv_btn.png" class="image-on" alt="Menu CV">
+                  <img src="img/cv_btn_red.png" class="image-off" alt="Menu CV surligner rouge">
+                </a>
               </li>
             </ul>
          </div>
@@ -46,69 +69,81 @@
 <main class="container-fluid">
   <div class="jumbotron-fluid paral paralsec mb-0 mt-0">
     <br>
-    <h1 class="display-3" id="qui">Jean-François Dignard</h1>
-    <h2 class="display-5 text-center">Développeur Web</h2>
-    <p class="lead line-1">Après des études en soutien informatique et quatre ans d'expérience en entreprise en tant qu'agent au soutien technique, 
-      j'ai décidé de me diriger et d'étudier dans un domaine pour lequel j'ai découvert une passion, la programmation et plus particulièrement le web. 
-      Mon but professionnel est de parfaire mes connaissances afin d'évoluer comme développeur web, mais pour l'instant je recherche surtout
-      les opportunités dans le domaine de l'intégration web et du développement front-end.</p>
-    <i class="fas fa-terminal fa-3x"></i>
+      <h1 class="display-3 mt-5" id="qui">Jean-François Dignard</h1>
+      <h2 class=" rouge text-center">Intégrateur/Développeur Web</h2>
+      <div class="opa-title ml-5 mr-5 pt-4">
+        <p class="lead ml-5 mr-5 line">Après des études en soutien informatique et quatre ans d'expérience en entreprise en tant qu'agent au soutien technique, 
+          j'ai décidé de me diriger et d'étudier dans un domaine pour lequel j'ai découvert une passion, la programmation et le design d'interface. 
+          Mon but professionnel est de parfaire mes connaissances afin d'évoluer comme développeur web, mais pour l'instant je recherche surtout
+          les opportunités dans le domaine de l'intégration web et du développement front-end.</p>
+        <p class="ml-5 mr-5 line">Passionnée d'informatique depuis mon enfance, j'adore apprendre et parfaire constamment mes connaissances. Grâce à mon parcours
+            professionel j’ai pu acquérir une expérience autant dans le domaine informatique qu’interpersonnel.</p>
+          <i class="fas fa-terminal fa-3x"></i>
+        </div>
+    <br>
+  <br>
+  <br> 
   </div>
+ 
 <!--- Deuxième section parallax --->
   <div class="jumbotron-fluid paral paralsec1 mb-0 mt-0">
     <h1 class="display-3" id="comp">Compétences</h1>
     <div class="row amg-skills d-flex justify-content-center amg-badge-collection opac mr-0 pt-2">
-      <div class="col-xs-3 amg-badge text-center">
-        <i class="fab fa-html5 fa-5x"></i>
-        <h3>HTML5</h3>
-      </div>
-      <div class="col-xs-3 amg-badge text-center">
-        <i class="fab fa-css3-alt fa-5x"></i>
-        <h3>CSS3</h3>
-      </div>
-      <div class="col-xs-3 amg-badge text-center">
-        <i class="fab fa-js fa-5x"></i>
-        <h3>JAVASCRIPT</h3>
-      </div>
-      <div class="col-xs-3 amg-badge text-center">
-        <i class="fab fa-bootstrap fa-5x"></i>
-        <h3>BOOTSTRAP</h3> 
-      </div>
-      <div class="col-xs-3 amg-badge text-center">
-        <i class="fab fa-git fa-5x"></i>
-        <h3>GIT</h3>
-      </div>
-      <div class="col-xs-3 amg-badge text-center">
-        <i class="fab fa-php fa-5x"></i>
-        <h3>PHP</h3>
-      </div>
-    </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
+          <i class="fab fa-html5 fa-5x"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
+          <i class="fab fa-css3-alt fa-5x"></i>
+          <h3>CSS3</h3>  
+        </div>
+        <div class="col-xs-6  col-md-3 col-lg-2 amg-badge text-center">
+          <i class="fab fa-js fa-5x"></i>
+          <h3>JAVASCRIPT</h3>          
+        </div>
+        <div class="col-xs-6  col-md-3 col-lg-2 amg-badge text-center">
+          <i class="fab fa-bootstrap fa-5x"></i>
+          <h3>BOOTSTRAP</h3>   
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
+          <i class="fab fa-git fa-5x"></i>
+          <h3>GIT</h3>  
+        </div>
+        <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
+          <i class="fab fa-php fa-5x"></i>
+          <h3>PHP</h3>  
+        </div> 
+  </div>
     <div class="row amg-skills d-flex justify-content-center amg-badge-collection opac mr-0 pb-2">
-      <div class="col-xs-3 amg-badge text-center">
+      <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
         <i class="fab fa-sass fa-5x"></i>
         <h3>SASS</h3>
       </div>
-      <div class="col-xs-3 amg-badge text-center">
+      <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
         <i class="fab fa-linux fa-5x"></i>
         <h3>LINUX</h3>
       </div>
-      <div class="col-xs-3 amg-badge text-center">
+      <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
         <i class="fas fa-database fa-5x"></i>
         <h3>SQL</h3> 
       </div>
-      <div class="col-xs-3 amg-badge text-center">
+      <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
         <i class="fab fa-wordpress fa-5x"></i>
         <h3>WORDPRESS</h3>
       </div>
-      <div class="col-xs-3 amg-badge text-center">
+      <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
         <i class="fab fa-drupal fa-5x"></i>
         <h3>DRUPAL</h3>
       </div>
+      <div class="col-xs-6 col-md-3 col-lg-2 amg-badge text-center">
+        <i class="fab fa-npm fa-5x"></i>
+        <h3>NPM</h3>
+      </div>
     </div>
     <h2 class="display-4 text-center text-white">Mon parcours</h2>
-    <div class="row d-flex justify-content-center">
-    <section class="col-sm-3 ml-5 align-middle">
-      <div class="card text-white bg-danger" style="max-width: 20rem;">
+    <div class="row d-flex justify-content-center mx-auto" style="width:100%;">
+    <section class="col-sm-3 align-middle">
+      <div class="card text-white bg-danger">
         <div class="card-body text-center">
           <h4 class="card-title">Soutien informatique</h4>
           <i class="fas fa-laptop fa-5x"></i>
@@ -116,21 +151,21 @@
         </div>       
       </div>
     </section>
-    <section class="col-sm-3 mt-2 ml-5 align-middle">
-      <div class="card text-white bg-danger" style="max-width: 20rem;">
+    <section class="col-sm-3 mt-2 align-middle">
+      <div class="card text-white bg-danger">
         <div class="card-body text-center">
           <h4 class="card-title">Agent soutien technique</h4>
           <i class="fas fa-network-wired fa-5x"></i>
-          <p class="card-text espace mt-2">Plus de trois ans d'expérience en entreprise</p>         
+          <p class="card-text espace mt-2">Plus de trois ans d'expérience en informatique</p>         
         </div>                    
       </div>
     </section>
-    <section class="col-sm-3 mt-2 ml-5 align-middle">
-      <div class="card text-white bg-danger" style="max-width: 20rem;">
+    <section class="col-sm-3 mt-2 align-middle">
+      <div class="card text-white bg-danger">
         <div class="card-body text-center">
           <h4 class="card-title">Production Médias Intéractifs</h4>
           <i class="fas fa-user-graduate fa-5x"></i>
-          <p class="card-text">Étude collégial (terminé mars 2020)</p>
+          <p class="card-text espace mt-2">Étude collégial (terminé mars 2020)</p>
         </div>       
       </div>
     </section>
@@ -138,42 +173,67 @@
   </div>
 <!-- Troisième section parallax -->
   <div class="jumbotron-fluid paral paralsec2 mb-0 mt-0">
-    <h1 class="display-3" id="trav">Mes travaux</h1>
-    <div class="row justify-content-center ml-1 mr-1">
-      <div class="col-6 mb-2">
-        <figure>
-          <img src="img/map.png" class="img-thumbnail img-fluid" alt="Carte au trésors">
-          <figcaption>Concept de carte au trésors représentant les étapes de la création d'un design web</figcaption>
-        </figure>
+  <h1 class="display-3" id="trav">Mes travaux</h1>
+    <div class="row" style="width:100%;">
+      <div class="col-sm-3 col-md-4 ml-3">
+        <div class="card mb-4 shadow-sm">
+          <a href="https://purpleeyesclothing.com/" target="_blank" rel="noopener noreferrer">
+            <img src="img/purpleeyes.png" class="bd-placeholder-img card-img-top img-fluid" style="width:100%; height: 100%;">
+          </a>
+          <div class="card-body">
+          <p class="card-text">Boutique de vêtement rétro Purple Eyes Clothing</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <small class="text-muted">WORDPRESS WOOCOMMERCE HTML5 CSS3</small>
+            </div>
+          </div>
       </div>
-      <div class="col-6 mb-2" id="prj2">
-        <figure>
-          <img src="img/rsz_projet_2.png" class="img-thumbnail img-fluid" alt="Boutique rétro">
-          <figcaption>Template de boutique en ligne au look rétro</figcaption>
-        </figure>
-      </div>
-      <div class="col-6 mb-2">
-        <figure>
-          <img src="img/medics.png" class="img-thumbnail img-fluid" alt="Design foodtruck">
-          <figcaption> Refonte du site web et centralisation de leurs différentes plateformes <br>
-            <a href="http://medics.crulrg.ulaval.ca/medics/" target="_blank">Site du Laboratoire MEDICS (Drupal)</a>
-          </figcaption>  
-        </figure>
-      </div>
-      <div class="col-6 mb-2">
-        <figure>
-          <img src="img/purpleeyes.png" class="img-thumbnail img-fluid" alt="Cinque Terre">
-          <figcaption>Création et gestion d'un site d'une fashion designer (Wordpress/WooCommerce)<br>
-            <a href="https://purpleeyesclothing.com/" target="_blank">Site de la marque de vêtement Purple Eyes</a>
-          </figcaption>   
-        </figure>
-      </div>
-    </div>      
+          </div>
+          <div class="col-sm-3 col-md-4 ml-3">
+            <div class="card mb-4 shadow-sm">
+              <a href="img/map.png" target="_blank">
+                <img src="img/rsz_map.png" class="bd-placeholder-img card-img-top img-fluid" style="width: 100%; height: 100%;">
+              </a>
+              <div class="card-body">
+                <p class="card-text">Carte au trésor avec les étapes de création du design web</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">ADOBE ILLUSTRATOR</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-4 ml-3">
+            <div class="card mb-4 shadow-sm">
+              <a href="http://medics.crulrg.ulaval.ca/medics/" target="_blank" rel="noopener noreferrer">
+                <img src="img/medics.png" class="bd-placeholder-img card-img-top img-fluid" style="width:100%; height: 100%;">
+              </a>
+              <div class="card-body">
+                <p class="card-text">Laboratoire MEDICS (non responsive mobile à la demande du client)</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">DRUPAL PHP SQL JS HTML5 CSS3</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-4 ml-3">
+            <div class="card mb-4 shadow-sm">
+            <a href="projet/dignard_TRAV02_InterMobile/index.html" target="_blank" rel="noopener noreferrer">
+              <img src="img/rsz_ecommerce.png" class="bd-placeholder-img card-img-top img-fluid" style="width:100%; height: 100%;">
+            </a>
+              <div class="card-body">
+                <p class="card-text">Template de boutique rétro</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-muted">HTML5 CSS3 JQUERY</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   </div>
 <div class="jumbotron-fluid paral paralsec3 mb-0 mt-0">
-  <h2 class="display-3 text-center">Contact *</h2>
+  <h2 class="display-3 text-center">Contact</h2>
 <!-- Quatrième section parallax CONTACT -->
   <section class="contact-section my-5" id="cont">
+  <form action="send.php" method="POST">
     <div class="card">
       <div class="row">
         <div class="col-lg-8">
@@ -181,64 +241,61 @@
             <h3 class="mt-4"><img src="img/icn_envelope.png" alt="Icone d'enveloppe"> Me contacter:</h3>
             <div class="row">
               <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="form-contact-name" class="form-control">
-                  <label for="form-contact-name" class="">Votre nom</label>
+                <div class="md-form mb-0" id="nom-group">
+                  <input type="text" name="nom" class="form-control inputbox" id="form-contact-name">
+                  <label for="form-contact-name" id="label-name">Votre nom</label>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="form-contact-email" class="form-control">
-                  <label for="form-contact-email" class="">Votre courriel</label>
+                <div class="md-form mb-0" id="email-group">
+                  <input type="text" name="email" class="form-control inputbox" id="form-contact-email">
+                  <label for="form-contact-email" id="label-email">Votre courriel</label>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="form-contact-phone" class="form-control">
-                  <label for="form-contact-phone" class="">Votre téléphone</label>
+                <div class="md-form mb-0" id="phone-group">
+                  <input type="text" name="phone" class="form-control inputbox" id="form-contact-phone">
+                  <label for="form-contact-phone" id="label-phone">Votre téléphone</label>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="md-form mb-0">
-                  <input type="text" id="form-contact-company" class="form-control">
-                  <label for="form-contact-company" class="">Votre compagnie</label>
+                <div class="md-form mb-0" id="cie-group">
+                  <input type="text" name="cie" id="form-contact-company" class="form-control inputbox">
+                  <label for="form-contact-company">Votre compagnie</label>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                <div class="md-form mb-0">
-                  <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
-                  <label for="form-contact-message">Votre message</label>
+                <div class="md-form mb-0" id="message-group">
+                  <textarea name="message" id="form-contact-message" class="form-control md-textarea inputbox" rows="3"></textarea>
+                  <label for="form-contact-message" id="label-message">Votre message</label>
                   <a class="btn-floating btn-lg blue"></a><br>
-                  <button type="button" class="btn btn-danger">Envoyer</button>
                 </div>
               </div>
+              <button type="submit" id="btnSend" class="btn btn-danger">Envoyer</button>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card-body contact text-center h-100 text-dark">
-            <h3 class="my-4 pb-2"><img src="img/icn_address-card.png" class="pr-2" alt="Icone d'enveloppe">Mes infos</h3>
-            <ul class="text-lg-left list-unstyled ml-4">
-              <li>
-                <p class="text-dark"> <img src="img/icn_marker.png" class="pr-2" alt="Icone d'enveloppe">Ville de Québec, Qc, Canada</p>
-              </li>
-              <li>
-                <p class="text-dark"> <img src="img/icn_phone.png" class="pr-2" alt="Icone d'enveloppe">1-418-569-7418</p>
-              </li>
-              <li>
-                <p class="text-dark"><img src="img/icn_envelope2.png" class="pr-2" alt="Icone d'enveloppe">jeff.dignard@outlook.com</p>
-              </li>
-            </ul>
-            <hr class="hr-light my-4">
-            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jf-dignard"><a class="LI-simple-link" href='https://ca.linkedin.com/in/jf-dignard?trk=profile-badge'>Jean-François Dignard</a></div>
-          </div>
-        </div>
-        <p class="contact">*formulaire non fonctionel car aucun hébergement php pour le moment</p>
-      </div>
+  </form>
+  <div class="col-lg-4">
+    <div class="card-body contact text-center h-100 text-dark">
+      <h3 class="my-4 pb-2"><img src="img/icn_address-card.png" class="pr-2" alt="Icone d'enveloppe">Mes infos</h3>
+      <ul class="text-lg-left list-unstyled ml-4">
+        <li>
+          <p class="text-dark"> <img src="img/icn_marker.png" class="pr-2" alt="Icone d'enveloppe">Ville de Québec, Qc, Canada</p>
+        </li>
+        <li>
+          <p class="text-dark"> <img src="img/icn_phone.png" class="pr-2" alt="Icone d'enveloppe">1-418-569-7418</p>
+        </li>
+      </ul>
+      <hr class="hr-light my-4">
+      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jf-dignard"><a class="LI-simple-link" href='https://ca.linkedin.com/in/jf-dignard?trk=profile-badge'>Jean-François Dignard</a></div>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 <!-- Fin quatrième section CONTACT -->
@@ -247,12 +304,13 @@
 <!-- Footer -->
 <footer class="wn-footer">
   <a href="#" class="SmoothTop">Retour en haut de page</a>
+  <p>© 2021 - Tous droits réservés</p>
 </footer>
 <!-- Scripts -->
 <script src="lib/js/jquery-3.4.1.min.js"></script>
 <script src="lib/js/popper.min.js"></script>
 <script src="app/app.js"></script>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+<script src="app/form.js"></script>
 <script>
   // Fonction top scrolling
   $(window).scroll(function() {
@@ -263,5 +321,6 @@
       }
   });
 </script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </body>
 </html>

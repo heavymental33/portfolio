@@ -75,10 +75,10 @@ $(function(){
   });
 
 });
-// FIN section JQuery
+
 
 // Animation scrolling pour les liens du menu (Js vanilla)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
 

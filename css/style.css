@@ -1,12 +1,35 @@
 
-/* Regle de style général*/ 
+/* Règles de reset */ 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+
+}
+
+
+/* Regle de style général*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
-figcaption {
-  color: white;
+header {
+    float: left;
+    margin: -1% 0 30px 0;
+    padding: 5px 0 0 0;
+    width: 100%;
+}
+
+div[class="card-body"] {
+  background-color: black;
   text-align: center;
 }
 
@@ -67,13 +90,64 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: crimson;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 nav ul li a:hover {
   text-decoration: none;
   color: crimson;
   font-weight: bold;
+}
+
+/* Règles menu hover*/ 
+.image-off, #quisuije:hover .image-on {
+  display: none;
+  padding-top: 1em;
+}
+
+.image-on, #quisuije:hover .image-off {
+  display: block;
+  padding-top: 1em;
+}
+
+.image-off, #competences:hover .image-on {
+  display: none;
+  padding-top: 1em;
+}
+
+.image-on, #competences:hover .image-off {
+  display: block;
+  padding-top: 1em;
+}
+
+.image-off, #travaux:hover .image-on {
+  display: none;
+  padding-top: 1em;
+}
+
+.image-on, #travaux:hover .image-off {
+  display: block;
+  padding-top: 1em;
+}
+
+.image-off, #contact:hover .image-on {
+  display: none;
+  padding-top: 1em;
+}
+
+.image-on, #contact:hover .image-off {
+  display: block;
+  padding-top: 1em;
+}
+
+.image-off, #cv:hover .image-on {
+  display: none;
+  padding-top: 1em;
+}
+
+.image-on, #cv:hover .image-off {
+  display: block;
+  padding-top: 1em;
 }
 
 
@@ -148,6 +222,14 @@ nav ul li a:hover {
   line-height: 1.6 !important;
 }
 
+.error {
+  color: red;
+}
+
+.rouge {
+    color: crimson;
+}
+
 .space {
   margin-top: 5%;
 }
@@ -166,7 +248,9 @@ nav ul li a:hover {
   font-size: 20px;
   letter-spacing: 2px;
 }
-
+.line {
+  line-height: normal !important;
+}
 .menu-icon {
   line-height: 60px;
   width: 100%;
@@ -178,7 +262,13 @@ nav ul li a:hover {
   color: #fff;
   display: none;
 }
-
+.opa-title {
+  background-color: black;
+  opacity: .8;
+}
+.box-projet {
+  background-color: deeppink !important;
+}
   /* FIN ID & CLASSES perso */
 
   /* Footer */
@@ -186,12 +276,12 @@ nav ul li a:hover {
   padding: 2.5rem 0;
   text-align: center;
   color: white;
-  background-color: #607D8B;
+  background-color: black;
   border-top: .05rem solid #e5e5e5;
 }
      
 .wn-footer a {
-  color: yellow;
+  color: crimson;
 }
 
 .fa-terminal {
@@ -262,19 +352,23 @@ nav ul li a:hover {
   font-size: small !important;
 }
 
+ /* Hover Blur Effect */
+
+
 /* Media qurey section */
 
-@media(max-width: 786px) {
+@media(max-width: 850px) {
 
   .logo {
         position: fixed;
         top: 0;
-        margin-top: 16px;
+        
   }
 
   nav ul {
         max-height: 0px;
         background: #000;
+        width:100%;
   }
 
   nav.black ul {
@@ -286,14 +380,35 @@ nav ul li a:hover {
   }
 
   nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 24px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  nav ul li a img {
+    margin-left: 12em;
   }
 
   .menu-icon {
         display: block;
+        width: 100%;
+  }
+  
+}
+@media(max-width: 1300px){
+  nav ul li a img {
+    width: 80% !important;
+  }
+  nav ul li {
+    padding: 0px !important;
+    margin: 0 !important;
   }
 
 }
+
